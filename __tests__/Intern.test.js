@@ -1,22 +1,22 @@
-const Engineer = require('../lib/Engineer');
+const Intern = require('../lib/Intern');
 
-test("Can create Engineer object", () => {
+test("Can create Intern object", () => {
     var expectedValue    = "object"
-    const e = new Engineer();
+    const e = new Intern();
     var valueGot = typeof(e);
     expect(valueGot).toBe(expectedValue);
   });
 
-  test("Get role returns Engineer", () => {
-    var expectedValue    = "Engineer"
-    const e = new Engineer();
+  test("Get role returns Intern", () => {
+    var expectedValue    = "Intern"
+    const e = new Intern();
     var valueGot = e.getRole();
     expect(valueGot).toBe(expectedValue);
   });
   
-  test("Get Github returns Github handle of Engineer", () => {
-    var expectedValue    = "TestGithub123"
-    const e = new Engineer('TestEngineer', 'testEngineer@email.com', '123', expectedValue);
-    var valueGot = e.getGithub();
+  test("Get School returns School name of intern", () => {
+    var expectedValue    = "School123"
+    const e = new Intern('newIntern', 'newIntern@email.com', '123', expectedValue);
+    var valueGot = e.getSchool();
     expect(valueGot).toBe(expectedValue);
   });
