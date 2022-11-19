@@ -24,23 +24,23 @@ const managerQuestions = [
     {
         type: 'input', 
         name: 'email',
+        message: 'what is the managers ID?',
+        validate: (input)=>{
+            if (input !== ''){
+                return true;
+            }
+            return 'ID has to have at least one character'
+        }
+    },
+    {
+        type: 'input', 
+        name: 'id',
         message: 'what is the managers email?',
         validate: (input)=>{
             if (input !== ''){
                 return true;
             }
             return 'email has to have at least one character'
-        }
-    },
-    {
-        type: 'input', 
-        name: 'id',
-        message: 'what is the managers id?',
-        validate: (input)=>{
-            if (input !== ''){
-                return true;
-            }
-            return 'id has to have at least one character'
         }
     },
     {
@@ -109,23 +109,23 @@ const engineerQuestions = [
     {
         type: 'input', 
         name: 'email',
+        message: 'what is the engineers ID?',
+        validate: (input)=>{
+            if (input !== ''){
+                return true;
+            }
+            return 'ID has to have at least one character'
+        }
+    },
+    {
+        type: 'input', 
+        name: 'id',
         message: 'what is the engineers email?',
         validate: (input)=>{
             if (input !== ''){
                 return true;
             }
             return 'email has to have at least one character'
-        }
-    },
-    {
-        type: 'input', 
-        name: 'id',
-        message: 'what is the engineers id?',
-        validate: (input)=>{
-            if (input !== ''){
-                return true;
-            }
-            return 'id has to have at least one character'
         }
     },
     {
@@ -169,23 +169,23 @@ const internQuestions = [
     {
         type: 'input', 
         name: 'email',
+        message: 'what is the intern ID?',
+        validate: (input)=>{
+            if (input !== ''){
+                return true;
+            }
+            return 'ID has to have at least one character'
+        }
+    },
+    {
+        type: 'input', 
+        name: 'id',
         message: 'what is the intern email?',
         validate: (input)=>{
             if (input !== ''){
                 return true;
             }
             return 'email has to have at least one character'
-        }
-    },
-    {
-        type: 'input', 
-        name: 'id',
-        message: 'what is the intern id?',
-        validate: (input)=>{
-            if (input !== ''){
-                return true;
-            }
-            return 'id has to have at least one character'
         }
     },
     {
