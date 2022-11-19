@@ -43,18 +43,19 @@ function createManagerHTMLCard(mgr){
             <ul class="list-group">
                 <li class="list-group-item">ID: ${mgr.getId()}</li>
                 <li class="list-group-item">Email: <a href="mailto:${mgr.getEmail()}">${mgr.getEmail()}</a></li>
-                <li class="list-group-item">Office number: ${mgr.getOfficeNumber()}</li>
+                <li class="list-group-item">Office number: ${mgr.getOfficenumber()}</li>
             </ul>
         </div>
     </div>
     `
 }
+// change mug
 function createEngineerHTMLCard(eng){
     return `
     <div class="card employee-card">
         <div class="card-header">
             <h2 class="card-title">${eng.getName()}</h2>
-            <h3 class="card-title"><i class="fas fa-mug-hot mr-2"></i>${eng.getRole()}</h3>
+            <h3 class="card-title"><i class="fas fa-star mr-2"></i>${eng.getRole()}</h3>
         </div>
         <div class="card-body">
             <ul class="list-group">
@@ -71,7 +72,7 @@ function createInternHTMLCard(int){
     <div class="card employee-card">
         <div class="card-header">
             <h2 class="card-title">${int.getName()}</h2>
-            <h3 class="card-title"><i class="fas fa-mug-hot mr-2"></i>${int.getRole()}</h3>
+            <h3 class="card-title"><i class="fas fa-graduation-cap mr-2"></i>${int.getRole()}</h3>
         </div>
         <div class="card-body">
             <ul class="list-group">
@@ -85,7 +86,25 @@ function createInternHTMLCard(int){
 }
 function createTeamHTMLFragment(teamArray){
     // tbd
+    const htmlArray = [];
 
+    htmlArray.push(teamArray
+        .filter(empl => empl.getRole() === "Manager")
+        .map(mgr => createManagerHTMLCard(mgr))
+    );
+
+    htmlArray.push(teamArray
+        .filter(empl => empl.getRole() === "Engineer")
+        .map(eng => createEngineerHTMLCard(eng))
+        .join('')
+    );
+
+    htmlArray.push(teamArray
+        .filter(empl => empl.getRole() === "Intern")
+        .map(int => createInternHTMLCard(int))
+        .join('')
+    );
+    return htmlArray.join('');
 }
 
 
