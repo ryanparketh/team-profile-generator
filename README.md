@@ -10,7 +10,8 @@ This is a team profile generator that can be used when the user inputs node inde
 
 
 ## Screenshot 
-![Note Taker](https://user-images.githubusercontent.com/110427818/200895662-bf47d188-553b-4fdb-b5c8-6a80e7fbb5c8.png)
-()
+![Note Taker](<img width="1486" alt="Screen Shot 2022-11-18 at 9 48 45 PM" src="https://user-images.githubusercontent.com/110427818/202830779-d1301d16-5c03-4ba9-abc8-fccd4ffd5cd5.png">
+)
+
 
 
