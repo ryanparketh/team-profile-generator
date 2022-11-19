@@ -10,8 +10,4 @@ This is a team profile generator that can be used when the user inputs node inde
 
 
 ## Screenshot 
-![Team Profile Generator](<img width="1486" alt="Screen Shot 2022-11-18 at 9 48 45 PM" src="https://user-images.githubusercontent.com/110427818/202830779-d1301d16-5c03-4ba9-abc8-fccd4ffd5cd5.png">)
-
-
-
-<img width="1486" alt="team profile generator" src="https://user-images.githubusercontent.com/110427818/202830819-450f4dd9-2d03-4245-aed9-76031af16c8d.png">
+![Team Profile Generator] <img width="1486" alt="team profile generator" src="https://user-images.githubusercontent.com/110427818/202830819-450f4dd9-2d03-4245-aed9-76031af16c8d.png">
