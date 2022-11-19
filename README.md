@@ -6,7 +6,7 @@ This is a team profile generator that can be used when the user inputs node inde
 
 
 ## Live Walk Through
-https://drive.google.com/file/d/1MyuuWcrGP00FTKx9rAeksI9j8slAaB9F/view)
+https://drive.google.com/file/d/1MyuuWcrGP00FTKx9rAeksI9j8slAaB9F/view
 
 
 ## Screenshot 
